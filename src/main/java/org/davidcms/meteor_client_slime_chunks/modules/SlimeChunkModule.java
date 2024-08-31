@@ -31,7 +31,7 @@ public class SlimeChunkModule extends Module{
             .name("Y Stretch")
             .description("The Y Stretch of the marker.")
             .defaultValue(100)
-            .range(-64, 320)
+            .range(0, 384+64)
             .sliderRange(-64, 320)
             .build()
     );
