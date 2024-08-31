@@ -1,28 +1,31 @@
 {
   "schemaVersion": 1,
-  "id": "metior_cliant_slime_chunks",
+  "id": "meteor_client_slime_chunks",
   "version": "${version}",
-  "name": "metior cliant slime chunks",
-  "description": "A mod abaut making is eazer to play tntwars with a simple system to load and regenerate maps.",
-  "authors": [],
+  "name": "Meteor Client Slime Chunks",
+  "description": "Addon mod for meteor client that shows you slime chunks",
+  "authors": [
+    "davidCMs"
+  ],
   "contact": {},
   "license": "All-Rights-Reserved",
-  "icon": "assets/metior_cliant_slime_chunks/icon.png",
+  "icon": "assets/meteor_client_slime_chunks/icon.png",
   "environment": "client",
   "entrypoints": {
-    "client": [
-      "org.davidcms.metior_cliant_slime_chunks.client.Metior_cliant_slime_chunksClient"
-    ],
-    "main": [
-      "org.davidcms.metior_cliant_slime_chunks.Metior_cliant_slime_chunks"
+    "meteor": [
+      "org.davidcms.meteor_client_slime_chunks.Meteor_client_slime_chunks"
     ]
   },
   "mixins": [
-    "metior_cliant_slime_chunks.mixins.json"
+    "meteor_client_slime_chunks.mixins.json"
   ],
+  "custom": {
+    "meteor-client:color": "25,225,25"
+  },
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "meteor-client": "*"
   }
 }
